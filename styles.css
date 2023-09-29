@@ -1,0 +1,114 @@
+:root {
+    --color-column-one: hsl(31, 77%, 52%);
+    --color-column-two: hsl(184, 100%, 22%);
+    --color-column-three: hsl(179, 100%, 13%);
+    --color-buttons-headings-background: hsl(0, 0%, 95%);
+    --color-paragraphs: hsla(0, 0%, 100%, 0.75);
+
+    --paragraph-font-family: 'Lexend Deca', sans-serif;;
+    --heading-font-family: 'Big Shoulders Display', cursive;;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex-container {
+    display: flex;
+    flex-grow: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 65vh;
+    width: 800px;
+}
+
+.body {
+    background-color: var(--color-buttons-headings-background);
+}
+
+.column-one {
+    background-color: var(--color-column-one);
+    border-radius: 10px 0px 0px 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    align-items: left;
+    padding: 2rem;
+}
+
+.column-one img {
+    align-self: center;
+}
+
+.column-one button {
+    color: var(--color-column-one);
+    font-weight: 700;
+    font-family: var(--paragraph-font-family);
+}
+
+.column-two {
+    background-color: var(--color-column-two);
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    align-items: left;
+    padding: 2rem;
+}
+
+.column-two img {
+    align-self: center;
+}
+
+.column-two button {
+    color: var(--color-column-two);
+    font-weight: 700;
+    font-family: var(--paragraph-font-family);
+}
+
+.column-three {
+    background-color: var(--color-column-three);
+    border-radius: 0px 10px 10px 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    align-items: left;
+    padding: 2rem;
+}
+
+.column-three img {
+    align-self: center;
+}
+
+.column-three button {
+    color: var(--color-column-three);
+    font-weight: 700;
+    font-family: var(--paragraph-font-family);
+}
+
+img {
+    height: 2rem;
+    width: 3.5rem;
+}
+
+h1 {
+    font-family: var(--heading-font-family);
+    color: var(--color-buttons-headings-background);
+}
+
+p {
+    font-family: var(--paragraph-font-family);
+    color: var(--color-paragraphs);
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 2em;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-buttons-headings-background);
+    height: 3em;
+    width: 150px;
+    border-radius: 30px;
+}
